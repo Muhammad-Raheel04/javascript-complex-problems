@@ -53,3 +53,18 @@ indexMultiplier([-3, 0, 8, -6]) ➞ -2
 // (-3*0 + 0*1 + 8*2 + -6*3)
 Notes
 All items in the array will be integers.
+
+Question #5
+Match the Last Item
+Create a function that takes an array of items and checks if the last item matches the rest of the array concatenated together.
+
+Examples
+matchLastItem(["rsq", "6hi", "g", "rsq6hig"]) ➞ true
+// The last item is the rest joined.
+
+matchLastItem([1, 1, 1, "11"]) ➞ false
+// The last item should be "111".
+
+matchLastItem([8, "thunder", true, "8thundertrue"]) ➞ true
+Notes
+The array is always filled with items.
