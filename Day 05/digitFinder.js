@@ -1,2 +1,2 @@
-const regex=/[0-9]+/;
+const regex=/\d+/;
 console.log(regex.test('an2'));
