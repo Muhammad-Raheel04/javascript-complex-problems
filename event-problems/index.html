@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <input id='name' type="text" placeholder="enter name">
+        <input id="email" type="email" placeholder="enter mail">
+        <input id="age" type="number" placeholder="enter age">
+    </ul>
+    <script>
+        // below is an example of event delegation
+        // instead of attaching a separate event with each
+        // child element of ul 
+        // the event is handled at higher level
+        // better performance and optimized memory usage
+        // it's a common practice in react
+        const ul = document.querySelector('ul');
+        ul.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                console.log(e.target.value)
+            }
+        })
+    </script>
+</body>
+
+</html>
