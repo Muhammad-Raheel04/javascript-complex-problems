@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>Task1</li>
+        <li>Task2</li>
+        <li>Task3</li>
+        <li>Task4</li>
+    </ul>
+    <script>
+        const ul = document.querySelector('ul');
+        ul.addEventListener('click', (e) => {
+            e.target.remove()
+            console.log(`deleted child with text ${e.target.innerText}`);
+
+        })
+    </script>
+</body>
+
+</html>
