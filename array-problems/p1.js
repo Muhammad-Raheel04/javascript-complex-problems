@@ -7,11 +7,7 @@ const numbers=[1,2,3,4,5];
 const squaredNumbers=numbers.map((num)=>num*num);
 console.log(squaredNumbers);
 
-const oddNumbers=numbers.filter((num)=>{
-    if(num%2!==0){
-        return num;
-    }
-})
+const oddNumbers=numbers.filter((num)=>num%2!=0)
 console.log(oddNumbers);
 
 const sumArray=numbers.reduce((sum,num)=>sum+num,0);
