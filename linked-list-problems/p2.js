@@ -64,8 +64,8 @@ class LinkedList {
                 current.next = current.next.next;
                 return;
             }
+            current = current.next;
         }
-        current = current.next;
 
     }
     print() {
