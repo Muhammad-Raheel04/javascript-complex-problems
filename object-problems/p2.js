@@ -7,6 +7,8 @@ const obj3 = { c: 5, d: 6 };
 // 2. Object.assign()
 // Which property wins when keys conflict?
 
+merged1={...obj1,...obj2,...obj3};
+console.log(merged1);
 
 // solution
 const merged = Object.assign({}, obj1, obj2, obj3);

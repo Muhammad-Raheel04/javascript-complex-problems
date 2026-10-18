@@ -5,7 +5,7 @@
 document.getElementById('grandParent')
 .addEventListener('click',()=>{
     console.log("Grand Parent clicked")
-},true)
+},false)
 
 document.getElementById('parent')
 .addEventListener('click',()=>{
